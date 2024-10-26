@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-top: 11%;
+    padding: 20px;
+    background-image: url(Quiz\ backgorund\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial,poppins,sans-serif;
+    font-size: 26px;
+    font-style: bold;
+  }
+  .heading-container {
+    width: 30%;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  .heading-container h1 {
+    color: #000;
+    font-size: 36px;
+    font-style: bold;
+    margin: 0;
+    text-align: center;
+  }
+  .button-container {
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .difficulty-button {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .difficulty-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(13, 17, 15);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20%;
+    margin: 35px;
+    color: #e0e0e0;
+  }
+  
+  .btn:hover {
+    background-color: rgb(58, 59, 56);
+
+  }

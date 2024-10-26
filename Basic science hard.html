@@ -1,0 +1,44 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" href="Basic science easy.css">
+</head>
+<body>
+
+	<div class="background-image"></div>
+	<div class="quiz-container">
+		<div class="question-header">
+			<h1>Subject: Basic science(Hard level)</h1>
+			<p id="question-number">Question 1 of 5</p>
+		</div>
+		<div class="question-container">
+			<h2 id="question-text"></h2>
+			<ul id="options-list" class="options">
+				<li><input type="radio" id="option1" name="option"><label for="option1" id="option1-label"></label></li>
+				<li><input type="radio" id="option2" name="option"><label for="option2" id="option2-label"></label></li>
+				<li><input type="radio" id="option3" name="option"><label for="option3" id="option3-label"></label></li>
+				<li><input type="radio" id="option4" name="option"><label for="option4" id="option4-label"></label></li>
+			</ul>
+			<div id="timer-container">
+				<p id="timer-text">30 seconds</p>
+			</div>
+            <div id="answer-indicators"></div>
+            <button id="next-button" class="btn">Next</button>
+            <button id="submit-button" class="btn">Submit</button>
+        </div>
+		   <a href="dashboard.php"><button id="home-button" class="btn">Go to home</button></a>
+		   <div id="congratsModal" class="modal">
+			<div class="modal-content">
+			  <span class="close" id="closeModal">&times;</span>
+			  <h2>Congratulations! Quiz Completed!</h2>
+			  <img src="trophy.jpg" alt="Trophy" class="trophy">
+			  <p id="final-score"></p>
+			</div>
+		  </div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+	<script src="Basic science hard.js"></script>
+</body>
+</html>

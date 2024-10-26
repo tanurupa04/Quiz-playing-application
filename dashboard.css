@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #FF8c00;
+    background: linear-gradient(to top,#ffc800,#ff9d00, #de6e3e );
+}
+
+.user{
+    padding-left: 30%; ;
+}
+
+.sidebar-toggle {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color:#f7ed9d;
+    color: #141313;
+    padding: 20px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-hidden {
+    transform: translateX(-100%);
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+    transform: translateX(-100%);
+}
+
+#sidebar-toggle:checked ~ .main-content {
+    margin-left: 0;
+}
+
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 26px;
+    color: #666;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topic {
+    margin: 10px;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic img {
+    width: 246px;
+    height: 160px;;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.get-in-touch, .quick-links, .send-feedback {
+    width: 30%;
+}
+
+.get-in-touch h2, .quick-links h2, .send-feedback h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.get-in-touch p, .quick-links ul, .send-feedback textarea {
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.send-feedback textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: yellow;
+
+  }
